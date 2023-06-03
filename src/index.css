@@ -11,3 +11,112 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navlink{
+  text-decoration: none;
+  padding: 10px 30px;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.cartitem{
+  color: white;
+  position: absolute;
+  top: 30%;
+  right: 30px;
+
+}
+.logo{
+  color: orange;
+}
+.heading{
+  color: rgb(17, 15, 15);
+  letter-spacing: 5px;
+  text-shadow: 1px 2px orange;
+  font-size: 50px;
+  font-weight: 700;
+}
+/* img{
+  height: 100px;
+  width: 100px;
+} */
+img {
+  height: 80px;
+  
+}
+.card {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  align-items: center;
+}
+.productsWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.btn-1 {
+  border: none;
+  outline: none;
+  background: #764abc;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #513282;
+}
+
+.heading {
+  padding: 25px 0;
+}
+.cartCount {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+.navLink {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+}
+
+.cartCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 14px;
+  border-radius: 5px;
+}
+.heading-1{
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: 0.5em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.input{
+
+  position: absolute;
+  top: 20px;
+  right: 10%;
+  height: 2rem;
+
+
+}
+.heading-2{
+  text-align: center;
+}
+@media (max-width:300px) {
+  .card {
+    background-color: rgb(238, 144, 144);
+  }
+}

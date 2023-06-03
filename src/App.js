@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+// importing react-router-dom for making spa
+import {Routes,Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Cart from './pages/Cart';
+import Navbr from './components/Navbr';
+// importing store
+import { store } from './store/store';
+// importing provider
+import { Provider } from 'react-redux';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Provider store={store}>
+      <Navbr/>
+    <Routes>
+      <Route path='/'element={<Home/>}/>
+      <Route path='/cart'element={<Cart/>}/>
+    </Routes>
+      </Provider>
+    </>
   );
 }
 
